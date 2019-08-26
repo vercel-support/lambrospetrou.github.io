@@ -1,4 +1,4 @@
-{{ if not ( eq .Section "page" ) }}
+{{ if not ( eq .Section "pages" ) }}
 <footer class='entry-footer'>
   <div class='container sep-before'>
   {{- if and ( eq .Site.Params.settings.showLastmod true ) ( not ( eq .Lastmod .Date ) ) -}}
