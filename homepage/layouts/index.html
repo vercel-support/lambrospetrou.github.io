@@ -1,0 +1,31 @@
+{{ partial "header" . }}
+
+{{ if .Content }}
+<div class='entry'>
+  {{ partial "entry/cover" . }}
+  {{ partial "entry/content" . }}
+</div>
+{{ end }}
+
+<section class='container list-container'>
+  <header><h3>Recent posts</h3></header>
+  <ul class='list'>
+    {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+    {{ range $pages }}
+      {{ .Render "li" }}
+    {{ end }}
+  </ul>
+
+  {{ partial "nav/pagination" . }}
+</section>
+
+<!-- {{- $homepageWidgets := .Site.Params.widgets.homepage -}}
+{{- if $homepageWidgets -}}
+<div class='home-widgets'>
+  <div class='container sep-before'>
+    {{- partial "extras/widget_area" ( dict "Widgets" $homepageWidgets "Scope" . ) -}}
+  </div>
+</div>
+{{- end -}} -->
+
+{{ partial "footer" . }}

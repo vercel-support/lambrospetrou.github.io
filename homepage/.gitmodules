@@ -1,0 +1,9 @@
+[submodule "basics"]
+	path = basics
+	url = https://github.com/arjunkrishnababu96/basics.git
+[submodule "themes/engimo"]
+	path = themes/engimo
+	url = https://github.com/achary/engimo.git
+[submodule "themes/minimo"]
+	path = themes/minimo
+	url = https://github.com/MunifTanjim/minimo.git
