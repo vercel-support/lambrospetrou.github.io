@@ -3,7 +3,7 @@ languageCode = "en-gb"
 title = "Lambros Petrou"
 theme = "minimo-lp"
 
-Paginate = 10
+Paginate = 50
 preserveTaxonomyNames = true
 
 enableRobotsTXT = true # generate robots.txt
